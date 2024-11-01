@@ -98,5 +98,51 @@ namespace Vendas
                 MessageBox.Show(er.Message);
             }
 		}
+
+		private void btnAdicionar_Click(object sender, EventArgs e)
+		{
+            if (txtQuantidade.Text == "")
+            {
+                MessageBox.Show("Por favor digite a quantidade do produto!", "quantidade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtQuantidade.Focus();
+                return;
+            }
+           
+            var repetido = false;
+            foreach (DataGridViewRow dr in dgvVenda.Rows)
+            {
+                if (Convert.ToString(cbxProduto.SelectedValue) == Convert.ToString(dr.Cells[0].Value))
+                {
+                    repetido = true;
+                }
+            }
+            if (repetido == false)
+            {
+                DataGridViewRow item = new DataGridViewRow();
+                item.CreateCells(dgvVenda);
+                item.Cells[0].Value = cbxProduto.SelectedValue;
+                item.Cells[1].Value = cbxProduto.Text;
+                item.Cells[2].Value = txtQuantidade.Text;
+                item.Cells[3].Value = txtPreco.Text;
+                item.Cells[4].Value = Convert.ToDecimal(txtQuantidade.Text) * Convert.ToDecimal(txtPreco.Text);
+                dgvVenda.Rows.Add(item);
+                cbxProduto.Text = "";
+                txtQuantidade.Text = string.Empty;
+                txtPreco.Text = string.Empty;
+                decimal soma = 0;
+                foreach (DataGridViewRow dr in  dgvVenda.Rows)
+                {
+                    soma += Convert.ToDecimal(dr.Cells[4].Value);
+                    txtTotal.Text = soma .ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("produto ja cadastrado!", "produto repetido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }                      
+
+		} 
+
+
 	}
 }

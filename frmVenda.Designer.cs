@@ -49,7 +49,7 @@
 			// 
 			this.cbxProduto.FormattingEnabled = true;
 			this.cbxProduto.Location = new System.Drawing.Point(13, 32);
-			this.cbxProduto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cbxProduto.Margin = new System.Windows.Forms.Padding(2);
 			this.cbxProduto.Name = "cbxProduto";
 			this.cbxProduto.Size = new System.Drawing.Size(344, 21);
 			this.cbxProduto.TabIndex = 0;
@@ -73,7 +73,7 @@
 			this.btnFechar.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnFechar.ForeColor = System.Drawing.Color.White;
 			this.btnFechar.Location = new System.Drawing.Point(508, 343);
-			this.btnFechar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnFechar.Margin = new System.Windows.Forms.Padding(2);
 			this.btnFechar.Name = "btnFechar";
 			this.btnFechar.Size = new System.Drawing.Size(123, 62);
 			this.btnFechar.TabIndex = 2;
@@ -84,7 +84,7 @@
 			// txtQuantidade
 			// 
 			this.txtQuantidade.Location = new System.Drawing.Point(13, 85);
-			this.txtQuantidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.txtQuantidade.Margin = new System.Windows.Forms.Padding(2);
 			this.txtQuantidade.Name = "txtQuantidade";
 			this.txtQuantidade.Size = new System.Drawing.Size(76, 20);
 			this.txtQuantidade.TabIndex = 3;
@@ -95,7 +95,7 @@
 			this.dgvVenda.AllowUserToDeleteRows = false;
 			this.dgvVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvVenda.Location = new System.Drawing.Point(20, 188);
-			this.dgvVenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.dgvVenda.Margin = new System.Windows.Forms.Padding(2);
 			this.dgvVenda.Name = "dgvVenda";
 			this.dgvVenda.ReadOnly = true;
 			this.dgvVenda.RowHeadersWidth = 51;
@@ -128,7 +128,7 @@
 			// txtPreco
 			// 
 			this.txtPreco.Location = new System.Drawing.Point(13, 138);
-			this.txtPreco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.txtPreco.Margin = new System.Windows.Forms.Padding(2);
 			this.txtPreco.Name = "txtPreco";
 			this.txtPreco.Size = new System.Drawing.Size(198, 20);
 			this.txtPreco.TabIndex = 6;
@@ -140,7 +140,7 @@
 			this.btnVenda.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnVenda.ForeColor = System.Drawing.Color.White;
 			this.btnVenda.Location = new System.Drawing.Point(508, 261);
-			this.btnVenda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnVenda.Margin = new System.Windows.Forms.Padding(2);
 			this.btnVenda.Name = "btnVenda";
 			this.btnVenda.Size = new System.Drawing.Size(123, 62);
 			this.btnVenda.TabIndex = 8;
@@ -154,12 +154,13 @@
 			this.btnAdicionar.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAdicionar.ForeColor = System.Drawing.Color.White;
 			this.btnAdicionar.Location = new System.Drawing.Point(375, 58);
-			this.btnAdicionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnAdicionar.Margin = new System.Windows.Forms.Padding(2);
 			this.btnAdicionar.Name = "btnAdicionar";
 			this.btnAdicionar.Size = new System.Drawing.Size(123, 37);
 			this.btnAdicionar.TabIndex = 9;
 			this.btnAdicionar.Text = "ADICIONAR";
 			this.btnAdicionar.UseVisualStyleBackColor = false;
+			this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
 			// 
 			// btnEditar
 			// 
@@ -168,7 +169,7 @@
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEditar.ForeColor = System.Drawing.Color.White;
 			this.btnEditar.Location = new System.Drawing.Point(375, 101);
-			this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.Size = new System.Drawing.Size(123, 37);
 			this.btnEditar.TabIndex = 10;
@@ -182,7 +183,7 @@
 			this.btnExcluir.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnExcluir.ForeColor = System.Drawing.Color.White;
 			this.btnExcluir.Location = new System.Drawing.Point(375, 143);
-			this.btnExcluir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnExcluir.Margin = new System.Windows.Forms.Padding(2);
 			this.btnExcluir.Name = "btnExcluir";
 			this.btnExcluir.Size = new System.Drawing.Size(123, 37);
 			this.btnExcluir.TabIndex = 11;
@@ -203,7 +204,7 @@
 			// txtTotal
 			// 
 			this.txtTotal.Location = new System.Drawing.Point(301, 387);
-			this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
 			this.txtTotal.Name = "txtTotal";
 			this.txtTotal.Size = new System.Drawing.Size(198, 20);
 			this.txtTotal.TabIndex = 12;
@@ -229,7 +230,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.cbxProduto);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "frmVenda";
